@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./IMG/logoS.png">
+    <title>WerkStats - Simulador de Oficina Mecânica</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo"><img src="./IMG/logoL.png" alt="" style="width: 150px;"></div>
+                <div>
+                    <label class="switch">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="nav-buttons">
+        <button class="nav-btn active" onclick="scrollToSection('hero')"></button>
+        <button class="nav-btn" onclick="scrollToSection('features')"></button>
+        <button class="nav-btn" onclick="scrollToSection('about')"></button>
+        <button class="nav-btn" onclick="scrollToSection('video')"></button>
+        <button class="nav-btn" onclick="scrollToSection('screenshots')"></button>
+        <button class="nav-btn" onclick="scrollToSection('character')"></button>
+        <button class="nav-btn" onclick="scrollToSection('newsletter')"></button>
+    </div>
+
+    <section class="hero" id="hero">
+        <canvas id="squares"></canvas>
+        <div class="scene">
+            <div class="carousel">
+                <img src="./IMG/C1.png" alt="" class="carousel_i">
+                <img src="./IMG/C2.png" alt="" class="carousel_i">
+                <img src="./IMG/C3.png" alt="" class="carousel_i">
+                <img src="./IMG/C1.png" alt="" class="carousel_i">
+                <img src="./IMG/C2.png" alt="" class="carousel_i">
+                <img src="./IMG/C3.png" alt="" class="carousel_i">
+                <img src="./IMG/C1.png" alt="" class="carousel_i">
+                <img src="./IMG/C2.png" alt="" class="carousel_i">
+                <img src="./IMG/C3.png" alt="" class="carousel_i">
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title animate-on-scroll">
+                <h2>Recursos do Jogo</h2>
+                <p>Uma experiência completa de trabalho em oficina mecânica com desafios realistas</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><img src="./IMG/i1.png" alt="" class="icon"></div>
+                    <h3>Reparos Realistas</h3>
+                    <p>Diversos tipos de veículos com problemas específicos que exigem diferentes habilidades para consertar.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><img src="./IMG/i2.png" alt="" class="icon"></div>
+                    <h3>Gestão Financeira</h3>
+                    <p>Controle seus gastos com equipamentos, peças e funcionários para maximizar seus lucros.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><img src="./IMG/i3.png" alt="" class="icon"></div>
+                    <h3>Expansão de Negócio</h3>
+                    <p>Comece pequeno e expanda sua oficina para se tornar uma referência no mundo automotivo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div>
+                    <img src="./IMG/about.png" alt="" class="about-image animate-on-scroll fade-in-left">
+                </div>
+                <div class="about-text animate-on-scroll fade-in-right">
+                    <h2>Sobre o WerkStats</h2>
+                    <p>Mergulhe no universo da mecânica, onde a poeira e o cheiro de graxa se misturam ao som das ferramentas, e transforme carros velhos em obras-primas da engenharia.</p>
+                    <a class="btn" onclick="scrollToSection('newsletter')">Eu quero jogar!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section" id="video">
+        <div class="container">
+            <div class="section-title animate-on-scroll">
+                <h2>Gameplay em Ação</h2>
+                <p>Veja um trailer do jogo e conheça a jogabilidade</p>
+            </div>
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <iframe 
+                        width="100%" 
+                        height="100%" 
+                        src="https://www.youtube.com/embed/QOQ96PxjOIw" 
+                        title="WerkStats - Gameplay Trailer" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="screenshots" id="screenshots">
+        <div class="container">
+            <div class="section-title animate-on-scroll">
+                <h2>Imagens do Jogo</h2>
+                <p>Confira uma prévia da experiência WerkStats</p>
+            </div>
+            <div class="screenshot-grid">
+                <div> <img src="./IMG/img1.png" alt="" class="screenshot"> </div>
+                <div> <img src="./IMG/img2.png" alt="" class="screenshot"> </div>
+                <div> <img src="./IMG/img3.png" alt="" class="screenshot"> </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="character" id="character">
+        <div class="container">
+            <div class="character-content">
+                <div class="character-image animate-on-scroll fade-in-left">
+                    <img src="./IMG/character.png" alt="Personagem principal do WerkStats">
+                </div>
+                <div class="character-text animate-on-scroll fade-in-right">
+                    <h2>Jaime Albuquerque</h2>
+                    <p>
+                        Um mecânico apaixonado por motores desde criança, Jaime transformou sua garagem em um império automotivo. 
+                        Determinado, habilidoso e com um olhar clínico para cada detalhe, ele acredita que "um bom carro reflete o coração de quem o conserta".
+                    </p>
+                    <p>
+                        No WerkStats, você assume o papel de Jaime — equilibrando trabalho, negócios e reputação no competitivo mundo das oficinas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta" id="newsletter">
+        <div class="container">
+            <h2>Acesse nosso jogo</h2>
+            <div>
+                <a href="../Game/index.html" class="btn">Jogar!</a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>WerkStats</h3>
+                    <p>O simulador definitivo de empreendimento em oficinas mecânicas.</p>
+                </div> 
+                <div class="footer-section">
+                    <h3>Responsáveis</h3>
+                    <div style="display: flex;">
+                        <div style="margin-right: 50px;">
+                            <p>Giovane de Souza</p>
+                            <p>Miguel Figueiredo</p>
+                        </div>
+                        <div>
+                            <p>Rayssa Lima</p>
+                            <p>Sofia Pires</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 WerkStats. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="qzq">
+        <div class="info">
+            <img src="./IMG/logoL.png" alt="" class="logo">
+            <p><b>406</b> Not Acceptable</p>
+            <p>O servidor não consegue entregar conteúdo no formato esperado.</p>
+        </div>
+        <div class="img">
+            <img src="./IMG/404.png" alt="" class="jaime">
+        </div>
+    </div>
+
+    <script src="./JS/script.js"></script>
+</body>
+</html>
+ 
